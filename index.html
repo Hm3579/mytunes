@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+header {
+    min-height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27007F;
+}
+
+.box-container {
+    width: 1240px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h3 {
+    color: white;
+    font-size: 32px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ul {
+    display: flex;
+}
+
+.hero {
+    padding: 160px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff00 url("2.jpg") no-repeat scroll center center;
+}
+
+.herocont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 74px;
+    color: #fff;
+    padding: 30px 0px;
+}
+
+.para1 {
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #281155;
+    padding: 50px 0px 320px;
+}
+
+.h4 {
+    font-size: 24px;
+    color: #fff;
+    padding: 0 0 40px;
+}
+
+.para2 {
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 50px;
+}
+
+.link1 {
+    padding: 12px 20px;
+    background-color: #DB0000;
+    margin: 40px 0;
+}
+
+.para3 {
+    padding: 0px 0px 30px;
+    color: #fff;
+}
+
+.img1 {
+    margin-top: -300px;
+    margin-bottom: 120px;
+}
+
+.h5 {
+    font-size: 20px;
+    padding: 0 0 50px;
+}
+
+.para4 {
+    line-height: 24px;
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+.link2 {
+    padding: 12px 20px;
+    background-color: #260082;
+    margin: 0 0 50px;
+}
+
+.section3 {
+    padding: 200px 0px 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff00 url("5.jpg") no-repeat scroll center center;
+}
+
+.h5-2 {
+    font-size: 20px;
+    padding: 0 0 40px;
+    color: #fff;
+}
+
+.para5 {
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section4-1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.section4-2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.para6 {
+    text-align: left;
+    line-height: 24px;  
+    padding: 0 0 25px; 
+}
+
+.h5-3 {
+    font-size: 20px;
+    padding: 0 0 20px;
+}
+
+.para6-2 {
+    width: 100%;
+    text-align: left;
+    line-height: 24px;  
+    padding: 0 0 25px;
+    margin: 0 0 25px;
+    border-bottom: 1px solid #808080; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A0057;
+}
+
+.foot {
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footsec {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.h5-4 {
+    font-size: 18px;
+    color: #fff;
+    border-bottom: #fff solid 1px;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+}
+
+li {
+    color: white;
+    line-height: 24px;
+}
+
+.footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #270081;
+    height: 70px;
+}
+
+.para7 {
+    color: white;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    header {
+    min-height: 80px;
+}
+
+.box-container {
+    width: 90%;
+}
+
+.h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+li {
+    margin: 0 4px;
+}
+
+.hero {
+    padding: 100px 0px;
+}
+
+
+h1 {
+    font-size: 60px;
+    padding: 20px 0px;
+}
+
+.para1 {
+    padding: 20px 0;
+}
+
+.section1 {
+
+    padding: 40px 0px 140px;
+}
+
+.h4 {
+    font-size: 22px;
+    padding: 0 0 30px;
+}
+
+.para2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.section2 {
+    padding: 0 0 40px;
+}
+
+.link1 {
+    padding: 10px 18px;
+    background-color: #DB0000;
+    margin: 30px 0;
+}
+
+.para3 {
+    padding: 0px 0px 30px;
+    color: #fff;
+}
+
+.img1 {
+    width: 100%;
+    margin-top: -110px;
+    margin-bottom: 50px;
+}
+
+.h5 {
+    font-size: 18px;
+    padding: 0 0 30px;
+}
+
+.para4 {
+    padding: 0 0 30px;
+}
+
+.link2 {
+    padding: 10px 18px;
+    margin: 0 0 30px;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.section3 {
+    padding: 100px 0px 250px;
+}
+
+.h5-2 {
+    font-size: 18px;
+    padding: 0 0 30px;
+}
+
+
+.section4 {
+    padding: 50px 0;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.section4-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 40px;
+
+}
+
+.img3 {
+    width: 90%;
+}
+
+.section4-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.para6 {
+    padding: 0 0 20px; 
+}
+
+.h5-3 {
+    font-size: 18px;
+    padding: 0 0 20px;
+}
+
+.para6-2 {
+    margin: 0 0 25px;
+}
+
+.foot {
+    padding: 30px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footsec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+
+.h5-4 {
+    font-size: 18px;
+
+}
+
+.footer2 {
+    height: 60px;
+}
+
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <section class="box-container menu">
+            <div><h3 class="h3">myTunes</h3></div>
+            <div>
+                <ul class="ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <section class="hero">
+        <div class="box-container herocont">
+            <h1>my Tunes</h1>
+            <h3 class="h3">Your music, movies, and TV shows take center stage.</h3>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa unde doloribus sed ea incidunt, aliquam molestiae quaerat magnam quisquam, blanditiis deserunt consectetur? Quasi voluptate sed dignissimos fugiat veniam sapiente!</p>
+        </div>
+    </section>
+
+    <section class="section1">
+        <div class="box-container herocont">
+            <h4 class="h4">Music</h4>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa unde doloribus sed ea incidunt, aliquam molestiae quaerat magnam quisquam, blanditiis deserunt consectetur? Quasi voluptate sed dignissimos fugiat veniam sapiente!</p>
+            <a class="link1" href="#">Start Now</a>
+            <p class="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odio quam quasi libero blanditiis.</p>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="box-container herocont">
+            <div><img class="img1" src="3.png" alt=""></div>
+            <h5 class="h5">The movie and TV collection</h5>
+            <p class="para4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates praesentium odio, consectetur consequuntur aliquam rerum a illo. Maxime temporibus ab, vero expedita a mollitia voluptate nobis eius, ex corporis dignissimos distinctio! Debitis possimus facere, vitae id harum maiores atque ratione consequuntur voluptatem minus ipsam corporis itaque magnam dolorem similique officia eligendi ad libero nulla voluptatum in temporibus. Dolorem, similique, maxime.</p>
+            <a class="link2" href="#">Read more</a>
+            <img class="img2" src="4.jpg" alt="">
+        </div>
+    </section>
+    <section class="section3">
+        <div class="box-container herocont">
+            <h5 class="h5-2">A world of entertainment.</h5>
+            <p class="para5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates praesentium odio, consectetur consequuntur aliquam rerum a illo. Maxime temporibus ab, vero expedita a mollitia voluptate nobis eius, ex corporis dignissimos distinctio! Debitis possimus facere, vitae id harum maiores atque ratione consequuntur voluptatem minus ipsam corporis itaque magnam dolorem.</p>
+
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="box-container container1">
+            <div class="section4-1">
+                <img class="img3" src="1.jpg" alt="">
+            </div>
+            <div class="section4-2">
+                <h5 class="h5-3">Gift Card</h5>
+                <p class="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis sint quas sunt? Eveniet et alias expedita, tempora quaerat assumenda. Ad impedit assumenda dolore odit, minima explicabo sunt magni voluptas laboriosam rerum est dolor hic, possimus unde esse ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde cumque sunt.</p>
+                <p class="para6-2">Already have an gift card.</p>
+                <a class="link2" href="#">Redeem</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="box-container foot">
+            <div class="footsec">
+                <h5 class="h5-4">Shop &learn</h5>
+                <ul>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Shows</li>
+                    <li>App</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div class="footsec">
+                <h5 class="h5-4">Shop &learn</h5>
+                <ul>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Shows</li>
+                    <li>App</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div class="footsec">
+                <h5 class="h5-4">Shop &learn</h5>
+                <ul>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Shows</li>
+                    <li>App</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div class="footsec">
+                <h5 class="h5-4">Shop &learn</h5>
+                <ul>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Shows</li>
+                    <li>App</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    
+    <section class="footer2">
+        <div><p class="para7">Copyright &copy; 2024</p></div>
+    </section>
+
+    
+</body>
+</html>
